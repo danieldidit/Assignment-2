@@ -31,15 +31,14 @@ for (let j = 0; j < imgArray.length; j++){
         imgLarge.src = imgArray[j].src.replace("small", "large");
 
         resetImgStyle();
-
-        /**
-         * figcaption text display switch
-         */
+ 
         imgArray[j].style.border = "1px solid white";
         imgArray[j].style.transform = "scale(1.05)";
         imgArray[j].style.filter = "grayscale(0)";
 
-
+        /**
+         * figcaption text display switch
+         */
         switch(j) {
             case 0:
                 document.querySelector("figcaption").innerHTML = "Lovely Pink Flowers";
